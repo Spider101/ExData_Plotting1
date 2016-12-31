@@ -9,7 +9,7 @@
 ###############################################################################
 
 #set up data dir and other basic variables if they don't exist already
-if (!file.exists("data")){
+if (!exists("powerDataSubset")){
     if(file.exists("plotGraph.R")){
         source("plotGraph.R")
     }
