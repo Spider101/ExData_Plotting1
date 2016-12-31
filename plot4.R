@@ -4,7 +4,20 @@
 ## Author - Abhimanyu Banerjee
 ## Date Created - 12/29/2016
 
-## File Description:
+## File Description: This is a script that opens a png graphics device and plots
+## four different plots on the canvass of the graphics device:
+## 1. 'Global_active_power' against the time instants the observations were made. 
+## 2. 'Voltage' against the time instants the observations were made.
+## 3. The three sub_metering variables against the time instants the observations
+##    were made.
+## 4. 'Global_reactive_power' against the time instants the observations were
+##    made.
+## The time instants in question are computed by pasting the 'Date' and 'Time' 
+## of the dataset in question and converting the combination to a Date object. 
+## The plot is then saved as 'plot2.png' and the graphics device is closed.
+## Note: if the dataframe containing the records needed for plotting is not 
+## present in the current environment, it sources a helper script 'plotGraph.R'
+## to setup the necessary environment.
 
 ###############################################################################
 
@@ -21,7 +34,8 @@ if (!exists("powerDataSubset")){
 #open a png graphic device (default dimension are 480x480)
 png("plot4.png")
 
-#set grid parameters through par function
+#set grid parameters through par function to allow for plotting of multiple
+#graphs
 par(mfrow=c(2,2))
 
 #calculate the time instants by combining the date and time variables

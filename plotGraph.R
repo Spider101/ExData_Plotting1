@@ -4,7 +4,12 @@
 ## Author - Abhimanyu Banerjee
 ## Date Created - 12/29/2016
 
-## File Description:
+## File Description: This is a script that sets up the environment for the other
+## plotting scripts. It checks if the data directory exists, if not it creates
+## the directory, downloads the UCI Electric Power Consumption dataset and unzips
+## it. It then reads the resulting text file into a dataframe and subsets out the
+## records from '2007-02-01' to '2007-02-02' to another dataframe which is used
+## by the other plotting scripts.
 
 ###############################################################################
 

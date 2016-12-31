@@ -4,7 +4,15 @@
 ## Author - Abhimanyu Banerjee
 ## Date Created - 12/29/2016
 
-## File Description:
+## File Description: This is a script that opens a png graphics device and plots
+## the three sub metering variables against the time instants the observations 
+## were made and includes a legend for the three lines on the plot. These time 
+## instants are computed by pasting the 'Date' and 'Time' of the dataset in 
+## question and converting the combination to a Date object. The plot is then 
+## saved as 'plot3.png' and the graphics device is closed.
+## Note: if the dataframe containing the records needed for plotting is not 
+## present in the current environment, it sources a helper script 'plotGraph.R'
+## to setup the necessary environment.
 
 ###############################################################################
 

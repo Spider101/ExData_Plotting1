@@ -4,7 +4,12 @@
 ## Author - Abhimanyu Banerjee
 ## Date Created - 12/29/2016
 
-## File Description:
+## File Description: This is a script that opens a png graphics device and plots
+## a histogram of the variable 'Global_active_power' from the dataset in 
+## question. The plot is then saved as 'plot1.png' and the graphics device is 
+## closed. Note: if the dataframe containing the records needed for plotting is 
+## not present in the current environment, it sources a helper script 'plotGraph.R'
+## to setup the necessary environment.
 
 ###############################################################################
 
